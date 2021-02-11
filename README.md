@@ -20,7 +20,7 @@ Add this to your projects pom.xml
     </execution>
   </executions>
   <configuration>
-   <configLocation>https://raw.githubusercontent.com/KTH/integral-settings/master/kth_checkstyle.xml</configLocation>
+   <configLocation>https://raw.githubusercontent.com/KTH/kth-java-settings/main/kth_checkstyle.xml</configLocation>
     <failsOnError>true</failsOnError>
   </configuration>
 </plugin>
