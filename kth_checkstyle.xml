@@ -58,6 +58,12 @@
     <property name="checks" value="MissingJavadoc.*"/>
   </module>
 
+  <!-- KTH: Allow comments on row 0 -->
+  <module name="SuppressionSingleFilter">
+    <property name="checks" value="CommentsIndentation"/>
+    <property name="message" value=".*[Cc]omment has incorrect indentation level 0.*"/>
+  </module>
+
   <module name="TreeWalker">
 
     <!-- KTH: Enable suppression by using comments //CHECKSTYLE:ON/OFF -->
