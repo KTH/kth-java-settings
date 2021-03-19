@@ -56,7 +56,10 @@
   <!-- KTH: Bug in version 8.41 of Checkstyle. Remove this filter when fixed. -->
   <!-- See issue https://github.com/checkstyle/checkstyle/issues/9326 -->
   <module name="SuppressionSingleFilter">
-    <property name="message" value="Indentation: 'block .curly' has incorrect indentation level.*"/>
+    <property name="message" value="Indentation: 'block lcurly' has incorrect indentation level.*"/>
+  </module>
+  <module name="SuppressionSingleFilter">
+    <property name="message" value="Indentation: 'block rcurly' has incorrect indentation level.*"/>
   </module>
 
   <!-- KTH: Ignore MissingJavadocType and MissingJavadocMethod checks -->
