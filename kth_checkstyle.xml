@@ -47,10 +47,16 @@
     <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
   </module>
 
-  <!-- KTH: Bug in version 8.39 of Checkstyle. Remove this filter when fixed (probably in 8.40) -->
+  <!-- KTH: Bug in version 8.39 of Checkstyle. Remove this filter when fixed. -->
   <!-- See issue https://github.com/checkstyle/checkstyle/issues/8979 -->
   <module name="SuppressionSingleFilter">
-    <property name="message" value="'array initialization rcurly' has incorrect indentation level 2, expected level should be one of the following: 4, 8."/>
+    <property name="message" value="'array initialization rcurly' has incorrect indentation level.*"/>
+  </module>
+
+  <!-- KTH: Bug in version 8.41 of Checkstyle. Remove this filter when fixed. -->
+  <!-- See issue https://github.com/checkstyle/checkstyle/issues/9326 -->
+  <module name="SuppressionSingleFilter">
+    <property name="message" value="'block .curly' has incorrect indentation level.*"/>
   </module>
 
   <!-- KTH: Ignore MissingJavadocType and MissingJavadocMethod checks -->
