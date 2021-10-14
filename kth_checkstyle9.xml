@@ -70,10 +70,16 @@
     <property name="message" value=".*[Cc]omment has incorrect indentation level 0.*"/>
   </module>
 
+  <!-- KTH: Allow use of @SuppressWarnings annotation -->
+  <module name="SuppressWarningsFilter"/>
+  
   <module name="TreeWalker">
 
     <!-- KTH: Enable suppression by using comments //CHECKSTYLE:ON/OFF -->
     <module name="SuppressionCommentFilter"/>
+            
+    <!-- KTH: Allow use of @SuppressWarnings annotation -->
+    <module name="SuppressWarningsHolder"/>
 
     <module name="OuterTypeFilename"/>
     <module name="IllegalTokenText">
